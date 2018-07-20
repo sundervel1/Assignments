@@ -16,7 +16,7 @@ public class StarFormation {
 		}
 		if (rows < 1) {
 			System.err.println("Number of rows should be more than 1");
-			System.exit(0);
+			System.exit(0); // DON'T USE System.exit(0) unnecessarily. if alone is enough as else will not be executed
 		} else {
 			x = 2 * rows - (rows / 2);
 			int flag = rows / 2;
